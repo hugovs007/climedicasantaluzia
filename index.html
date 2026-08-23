@@ -14,12 +14,13 @@
 <header class="header" id="header">
   <div class="header-inner container">
     <a href="#topo">
-      <img src="logo.png" alt="Climédica Santa Luzia" class="logo-img">
+      <img src="assets/logo.png" alt="Climédica Santa Luzia" class="logo-img">
     </a>
     <nav class="nav-links">
       <a href="#especialidades">Especialidades</a>
       <a href="#diferenciais">Diferenciais</a>
       <a href="#como-funciona">Como Funciona</a>
+      <a href="#localizacao">Como Chegar</a>
       <a href="#agendamento">Agendamento</a>
     </nav>
     <div class="header-actions">
@@ -179,6 +180,55 @@
   </div>
 </section>
 
+<!-- ===== LOCALIZAÇÃO / COMO CHEGAR ===== -->
+<section class="localizacao" id="localizacao">
+  <div class="container loc-inner">
+    <div class="loc-info">
+      <span class="eyebrow">Como chegar</span>
+      <h2>Venha nos visitar<br>em Santa Luzia</h2>
+      <p>Estamos em um ponto de fácil acesso, pronto para te receber com toda a estrutura e conforto que você merece.</p>
+
+      <div class="info-list">
+        <div class="info-item">
+          <span class="icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div><strong>Santa Luzia — PB</strong><span>Endereço completo disponível no WhatsApp</span></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </span>
+          <div><strong>Horário de atendimento</strong><span>Segunda a sexta — horário comercial</span></div>
+        </div>
+        <div class="info-item">
+          <span class="icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.81.33 1.6.63 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.72a2 2 0 0 1 2.11-.45c.76.3 1.55.51 2.36.63A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <div><strong>Dúvidas sobre o trajeto?</strong><span>Chame no WhatsApp (83) 99698-6117</span></div>
+        </div>
+      </div>
+
+      <div class="loc-ctas">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=-6.8730513,-36.9217084" target="_blank" rel="noopener" class="btn btn-cta">Como chegar (Google Maps)</a>
+      </div>
+    </div>
+
+    <div class="loc-map">
+      <iframe
+        src="https://www.google.com/maps?q=-6.8730513,-36.9217084&z=17&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Localização da Climédica Santa Luzia">
+      </iframe>
+    </div>
+  </div>
+</section>
+
 <!-- ===== AGENDAMENTO / FORMULÁRIO ===== -->
 <section class="agendamento" id="agendamento">
   <div class="container agendamento-inner">
@@ -204,7 +254,6 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </span>
           <div><strong>Resposta rápida</strong><span>Confirmação ainda no mesmo dia</span></div>
-                <a class="link-btn" href="https://www.google.com/maps/@-6.8730513,-36.9217084,3a,37.6y,163.33h,82.82t/data=!3m7!1e1!3m5!1sssat6mmI4B5dlESBxSNpsQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D7.1810845681388855%26panoid%3Dssat6mmI4B5dlESBxSNpsQ%26yaw%3D163.33176053835194!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
         </div>
       </div>
     </div>
@@ -243,7 +292,7 @@
         </div>
 
         <div class="form-group">
-          <label for="horario">Melhor período para atendimento</label>
+          <label for="horario">Melhor horário para contato</label>
           <select id="horario" name="horario" required>
             <option value="" disabled selected>Selecione um período</option>
             <option value="Manhã (8h às 12h)">Manhã (8h às 12h)</option>
@@ -264,7 +313,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col">
-        <img src="logo.png" alt="Climédica Santa Luzia" class="footer-logo">
+        <img src="assets/logo.png" alt="Climédica Santa Luzia" class="footer-logo">
         <p>Cuidando da sua saúde com amor. Ginecologia e Obstetrícia, Clínico Geral, Fisioterapia e Pilates, Estética e Ortopedia em um só lugar.</p>
       </div>
       <div class="footer-col">
@@ -273,6 +322,7 @@
           <li><a href="#especialidades">Especialidades</a></li>
           <li><a href="#diferenciais">Diferenciais</a></li>
           <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#localizacao">Como Chegar</a></li>
           <li><a href="#agendamento">Agendamento</a></li>
         </ul>
       </div>
