@@ -324,6 +324,8 @@ h1, h2, h3, h4 {
 
 .hero-visual {
   position: relative;
+  max-width: 440px;
+  padding: 0 0 34px 64px;
 }
 
 .hero-visual .badge-card {
@@ -336,12 +338,15 @@ h1, h2, h3, h4 {
 
 .hero-visual .badge-card img {
   border-radius: 10px;
+  width: 100%;
 }
 
 .hero-visual .floating-card {
   position: absolute;
-  bottom: -26px;
-  left: -20px;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  max-width: 230px;
   background: var(--branco);
   color: var(--preto);
   padding: 16px 20px;
@@ -578,6 +583,57 @@ h1, h2, h3, h4 {
   margin-top: 8px;
 }
 
+/* ===== Localização / Como Chegar ===== */
+.localizacao {
+  padding: 90px 0;
+  background: var(--branco);
+}
+
+.loc-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.loc-info h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin: 12px 0 14px;
+}
+
+.loc-info p {
+  color: var(--texto-suave);
+  margin-bottom: 26px;
+  max-width: 460px;
+}
+
+.loc-info .info-list { margin-bottom: 30px; }
+.loc-info .icon-circle { background: var(--azul); }
+
+.loc-map {
+  width: 100%;
+  height: 420px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  border: 1px solid var(--cinza-linha);
+  position: relative;
+}
+
+.loc-map::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  background: var(--vermelho);
+  z-index: 2;
+}
+
+@media (max-width: 960px) {
+  .loc-inner { grid-template-columns: 1fr; }
+  .loc-map { height: 320px; order: -1; }
+}
+
 /* ===== Formulário de Agendamento ===== */
 .agendamento {
   padding: 100px 0;
@@ -807,9 +863,7 @@ h1, h2, h3, h4 {
   .dif-grid { grid-template-columns: repeat(2, 1fr); }
   .agendamento-inner { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-}
-
-@media (max-width: 720px) {
+}@media (max-width: 720px) {
   .nav-links {
     display: none;
     position: absolute;
@@ -835,6 +889,10 @@ h1, h2, h3, h4 {
   .hero-stats { gap: 22px; }
   .form-card { padding: 28px 22px; }
   .agendamento::before, .agendamento::after { display: none; }
+  .hero-visual { padding-left: 44px; }
+  .hero-visual .floating-card { max-width: 190px; padding: 12px 14px; }
+  .hero-visual .floating-card strong { font-size: 0.85rem; }
+  .hero-visual .floating-card span { font-size: 0.72rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
